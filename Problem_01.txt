@@ -1,0 +1,44 @@
+Price Tier Prediction for Mobile Devices
+Machine Learning / AI
+Submitted
+Problem Statement
+Accurately categorizing mobile devices into price ranges is important for consumers, retailers, and manufacturers. Price range classification for mobile involves predicting the suitable price category for a given mobile device by considering its features, specifications, and other relevant attributes. The aim is to develop a reliable and robust model that can automatically classify mobile devices into distinct price ranges.
+
+The task is to identify the price range between four categories i.e., 0, 1, 2, or 3.
+
+
+
+DataSet Description
+Training Dataset
+The training dataset is used to train the machine learning model.
+Training dataset contains 21 features: id, mobile_battery, bluetooth, speed_of_clock, dual_sim, front_camera, 4G, internal_memory, mobile_depth, mobile_weight, number_of_cores, primary_camera, pixel_height, pixel_width, ram, screen_height, screen_width, talk_time, 3G, touch_screen, wi-fi, and price_range.
+Testing Dataset
+The testing dataset is used to check the predictions of the model.
+Testing dataset contains 20 features: id, mobile_battery, bluetooth, speed_of_clock, dual_sim, front_camera, 4G, internal_memory, mobile_depth, mobile_weight, number_of_cores, primary_camera, pixel_height, pixel_width, ram, screen_height, screen_width, talk_time, 3G, touch_screen, and wi-fi.
+DataSet Paths
+You can access the training and testing datasets at the following locations :
+
+
+
+Training Dataset:
+/data/training/train.csv
+Testing Dataset:
+/data/test/test.csv
+Evaluation Parameters
+Output
+Save your output file at the following location:
+
+/code/prediction.csv
+Sample Output
+
+
+Evaluation
+The solution will be accepted if the accuracy of prediction is greater than 75%.
+NOTE: You need to perform data cleaning and pre-processing to test data as well.
+
+
+
+Datasets
+Training dataset
+Execution time limit
+10 seconds

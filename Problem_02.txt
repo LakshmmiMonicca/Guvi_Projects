@@ -1,0 +1,74 @@
+Complete the classes using the Specifications given below. Consider default visibility of classes, data fields, and methods unless mentioned otherwise.
+
+Specifications
+Class Definitions
+ ﻿class TelephoneBook:
+  data members:
+    contacts = []
+
+  Constructor
+    def __init__(self, contacts):
+     self.contacts = contacts
+     visibility: public ﻿
+
+  ﻿method definitions:
+   addContacts(self):
+    return : void
+    visibility: public
+   getContacts(self, startsWith):
+    return : int
+    visibility: public
+Complete the following tasks
+Class TelephoneBook
+
+-define the data members as per the given specifications.
+
+The contacts list is a list of student contact details, where each contact is a list containing two elements: [name (str), mobileNumber (str)]
+-define the constructor with public visibility.
+
+Implement the below methods for this class:
+
+-void addContacts(self):
+
+Write a code that creates a file name "contacts.txt" with the following data:
+The file contains the data of all the contacts separated by a new line.
+Individual contact will be in this format - name:mobileNumber
+-list getContacts(self, startsWith):
+
+Write a code that reads the text file "contacts.txt" and returns the list of all student's contact data whose name starting character is equal to the function parameter startsWith.
+The contact data is the list of name and mobileNumber.
+Sample Input 1
+
+contacts = [['John','7655'],['Jeffry','22937923'],['Jack','2323']]
+telephone = TelephoneBook(contacts)
+telephone.addContacts()
+Result 1
+
+This will create a file with the name "contacts.txt" given below -
+
+John:7655
+Jeffry:22937923
+Jack:2323
+Sample Input 2
+
+contacts = [['John','7655'],['Jeffry','22937923'],['Tack','2323']]
+r = TelephoneBook(contacts)
+r.addContacts()
+res = r.getContacts("T")
+print(res)
+Result 2
+
+File with the name "contacts.txt" given below -
+
+John:7655
+Jeffry:22937923
+Tack:2323
+Output 2
+
+[["Tack", "2323"]]
+NOTE:
+You can make suitable function calls and use the RUN CODE button to check your main() method output.
+
+
+Execution time limit
+10 seconds
